@@ -1,18 +1,32 @@
-package com.advjava.users.dto;
+package org.webapp.users.dto;
 
 public class User {
-	private String userid;
-	private String pwd;
-	public String getUserid() {
-		return userid;
+	private String name;
+	private String city;
+	private String mobile;
+	private String age;
+	public String getName() {
+		return name;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getPwd() {
-		return pwd;
+	public String getCity() {
+		return city;
+	} 
+	public void setCity(String city) {
+		this.city = city;
 	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
 	}
 }

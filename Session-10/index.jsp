@@ -1,51 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="java.util.Date" buffer="none" autoFlush="true"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>Testing JSP</h3>
-	<%!
-	//declaration block
-	public int add(int a, int b){
-		return a+b;
-	}
-	%>
-	
-	<%@ include file="/second.jsp"%>
-	
-	Date is : <%=new Date() %>
-	
-	
-	
-	<%
-	
-		int i = 1;
-		int j = 2;
-		int k;
-		k= i +j;
-	%>
-	
-	The value of k is : <%=1 + 3 %>
-	
-	<br>
-	
-	<%
-		k= add(4556, 56326);
-	%>
-	
-	The value of k after addition is : <%=k %>
-	
-	<%
-		for(i = 0; i<5; i++){
-	%>
-	<br>
-	Value of i is : <%=i %>
-	<%	
-		}
-	%>
+	<div class="container">
+	<form action="success.jsp">
+		<input type="text" name="name" placeholder="enter name"/>
+		<input type="text" name="city" placeholder="enter city"/>
+		<input type="text" name="mobileno" placeholder="Enter mobile"/>
+		<input type="text" name="age" placeholder="Enter age"/>
+		<button type="submit">Submit</button>
+	</form>
+	</div>
 </body>
 </html>

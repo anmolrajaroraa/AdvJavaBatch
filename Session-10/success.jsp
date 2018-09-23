@@ -7,17 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello 
-	<!-- <%=session.getAttribute("saveduserid") %>-->
-	
-	<jsp:useBean id="user" class="com.advjava.users.dto.User" scope="request">
-		<jsp:setProperty name="user" property="userid" value="Tom"/>
+	<jsp:useBean id="user" class="org.webapp.users.dto.User" scope="request">
+		<jsp:setProperty property="*" name="user" />
 	</jsp:useBean>
-	
-	<jsp:getProperty property="userid" name="user"/>
-	
-	<!-- <%=user.getUserid() %> -->
-	
-	<!-- <%=request.getParameter("userid")%>-->
+	<jsp:getProperty property="name" name="user"/>
+	<jsp:getProperty property="age" name="user"/>
+	<jsp:getProperty property="city" name="user"/>
+	<jsp:getProperty property="mobile" name="user"/>
 </body>
 </html>
