@@ -1,0 +1,176 @@
+Struts - web based applications
+Spring - desktop, mobile and web
+
+Server :-
+1. Container
+2. Component
+3. Srvices
+
+Web server - web container
+Applications servers - web containers as well as EJB container
+
+TomEE
+
+Project ->WEB-INF
+		->classes(bytecode)
+		->web.xml  (deployment descriptor)
+
+CATALINA_HOME
+JAVA_HOME
+JRE_HOME
+
+BAck end -
+1. receive values from html
+2. we need to validate user id and password
+3. we need to authenticate user id and password 
+4. redirect user to welcome page/dashboard
+5. show errrors on the login screen
+
+
+servlet- simple java program that runs in container
+purpose is to handle requests and responses
+servlet came in 1996
+
+CGI was the first technology - web based apps
+
+tomcat - httpservlet - servlet-api.jar
+
+javax.servlet.* - we only import classes or interfaces present in servlet package
+javax.servlet.http.* - its not imported because it is also a package and packages have to be imported by directly calling to them
+
+httpservlet - handles http requests/responses
+httpservlet's parent class - Generic Servlet
+
+http - connection less & state less
+
+nano .bash_profile
+export CATALINA_HOME = C:\Users\Anmol\Downloads\apache-tomcat-8.5.33\apache-tomcat-8.5.33
+export JAVA_HOME = C:\Program Files\Java\jdk1.8.0_101
+export JRE_HOME = C:\Program Files\Java\jre1.8.0_101
+
+shutdown.bat
+sudo shutdown.bat
+sudo startup.bat
+
+when does the session terminate 
+client / server
+
+https://github.com/anmolrajaroraa
+
+java.sql.*
+
+JDBC API:-
+Connection - used to establish a connection with DB
+PreparedStatement/Statement/Callable Statement - query our database
+ResultSet - results of our query
+
+DriverManager(class) - makes a connection a DB
+
+
+Types of connections:
+1. Type 1 connectivity - JDBC ODBC Bridge Driver
+2. Type 2 connectivity - Partial Java Driver
+3. Type 3 connectivity - Partial Middleware Java Driver
+4. Type 4 connectivity - Pure java native driver
+
+5432
+3306
+1521
+
+Session object - multiple access
+Across browser accesibility - Context
+
+ANSI SQL
+
+\l - list the databases
+\c 'name_of_database' - connecting to database
+\d - tables or relations
+\d+ 'name_of_table' - viewing description of our table
+
+CRUD - Create, REad, Update, Delete
+
+Step 1 - load the class of driver
+Step 2 - create a connection
+Step 3 - execute query
+Step 4 - store result in ResultSet
+Step 5 - check if there is some data sent back by the DB
+
+mvc architecture for web application - model view controller
+dao - data access object (code related to DB)
+dto - data transfer object (model)
+
+JSTL - JSP Standard Tag Libraries
+
+XML - Extensible Markup Language
+
+<b>......</b>
+
+Client   <----     Server
+
+
+<salary>3000</salary>
+
+Features:-
+1. Transfer data  (software and hardware independent tool)
+2. Configure documents
+3. Design 
+4. Human-readable and machine-readable
+
+JSON (JavaScript Object Notation)
+
+
+1. Structural - DTD (Document Type Definition)
+2. Contextual - Schema - XSD - XML Schema Definition (as well as structure)
+3. Well-formed
+
+
+types of elements :-
+1.Complex Type
+2. Simple Type
+
+data types:-
+1. string
+2. decimal
+3. integer
+4. boolean
+5. date
+6. time
+
+1. default
+2. fixed
+
+Entity references:
+1. < - &lt;
+2. > - &gt;
+3. & - &amp;
+4. ' - &apos;
+5. " - &quot;
+
+Attributes:
+
+1. They cannot have multiple values
+2. They cannot have tree structure
+3. They are not expandable
+
+--> Attributes should be used for metadata only
+
+XMLHttpRequest Object
+
+Types of requests:
+1.Synchronous
+2. Async
+
+Features of XMLHttpRequest :
+1. Update a page without reloading a page
+2. Request and receive data after the page has loaded
+3. Send data in the background
+
+XPath - XML Path Language
+
+XSL - Extensible Stylesheet Language:-
+
+1. XSLT - XSL Transformations - transform XML into other formats
+	(Transforms XML source-tree into result-tree)
+2. XPath - language for navigating XML docs
+3. XQuery - a language for querying XML documents
+
