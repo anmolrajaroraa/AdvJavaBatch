@@ -174,3 +174,10 @@ XSL - Extensible Stylesheet Language:-
 2. XPath - language for navigating XML docs
 3. XQuery - a language for querying XML documents
 
+Web Services Types:
+1. SOAP - Simple Object Access Protocol  --> JAX-WS
+2. REST - Representational State Transfer --> JAX-RS
+
+WSDL (XML) -> Web Service Description Language
+UDDI (directory of web servcies) -> Universal Description Discovery and Integration 
+SEI (intermediary class - takes care of the conversion) -> Service Endpoint Interface
